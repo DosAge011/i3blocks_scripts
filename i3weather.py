@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import urllib.request, json, sys, unicodedata
+import urllib.request, json, sys
 URL = "https://api.openweathermap.org/data/2.5/weather?q={},{}&units=metric&appid={}"
 KEY = None
 country_code = None
