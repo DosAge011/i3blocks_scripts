@@ -33,8 +33,7 @@ try:
         min = data['main']['temp_min']
         max = data['main']['temp_max']
         icon = weather_icons.get(data['weather'][0]['icon'], '')
-        print('🇨🇦{} {} <span foreground="#91E78B">{}</span><sup>°c</sup> (<span foreground="#91E78B">{}</span><sup>°c</sup>↔<span foreground="#91E78B">{}</span><sup>°c</sup>)'.format(city,icon,temp,min,max))
-        #print(icon)
+        print('{} {} <span foreground="#91E78B">{}</span><sup>°c</sup> (<span foreground="#91E78B">{}</span><sup>°c</sup>↔<span foreground="#91E78B">{}</span><sup>°c</sup>)'.format(city,icon,temp,min,max))
 except IOError as ioe:
     print('Invalid API Key')
     
