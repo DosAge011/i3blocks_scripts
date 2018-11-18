@@ -2,8 +2,8 @@
 import urllib.request, json, sys, unicodedata
 URL = "https://api.openweathermap.org/data/2.5/weather?q={},{}&units=metric&appid={}"
 KEY = None
-country_code = 'ca'
-city_name = 'vancouver'
+country_code = None
+city_name = None
 
 weather_icons = {
     '01d':'🌞','01n':'🌞',
